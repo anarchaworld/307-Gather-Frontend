@@ -1,31 +1,23 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
 function AccountForm(props) {
-  const [person, setPerson] = useState(
-     {
-        username: "",
-        email: "",
-        password: "",
-     }
-  );
+  const [person, setPerson] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
 
   function handleChange(event) {
     const { username, value } = event.target;
     if (username === "password")
-      setPerson(
-         {username: person['username'], password: value}
-      );
-    else     
-       setPerson(
-         {username: value, password: person['password']}   
-       );
+      setPerson({ username: person["username"], password: value });
+    else setPerson({ username: value, password: person["password"] });
   }
 
   function submitForm() {
-    console.log("Submit Form Person: "+person);
+    console.log("Submit Form Person: " + person);
     props.handleSubmit(person);
-    setPerson({username: '', email: '', password: ''});
-   
+    setPerson({ username: "", email: "", password: "" });
   }
 
   return (
@@ -36,22 +28,25 @@ function AccountForm(props) {
         username="username"
         //_id="name"
         value={person.username}
-        onChange={handleChange} />
+        onChange={handleChange}
+      />
       <label htmlFor="password">Password</label>
       <input
         type="text"
         username="email"
         //_id="name"
         value={person.email}
-        onChange={handleChange} />
+        onChange={handleChange}
+      />
       <label htmlFor="password">Password</label>
       <input
         type="text"
         username="password"
         //_id="job"
         value={person.password}
-        onChange={handleChange} />
-        <input type="button" value="Submit" onClick={submitForm} />
+        onChange={handleChange}
+      />
+      <input type="button" value="Submit" onClick={submitForm} />
     </form>
   );
 }
