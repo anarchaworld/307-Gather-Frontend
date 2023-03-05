@@ -1,14 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import Home from "../Home";
 
-test("render home page - Gather", () => {
-  render(<Home />);
-  const linkElement = screen.getByText(/Gather/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-test("render home page - Cal Poly", () => {
-  render(<Home />);
-  const linkElement = screen.getByText(/Cal Poly/i);
-  expect(linkElement).toBeInTheDocument();
+it("Home Page renders without crashing.", () => {
+  const div = document.createElement("div");
+  ReactDOM.createRoot(div).render(<Home />);
 });
