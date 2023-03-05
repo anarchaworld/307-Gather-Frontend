@@ -90,6 +90,45 @@ async function makePostCall(person){
      return false;
   }
 }
+
+async function makeAccountPostCall(person){
+  try {
+    const response = await axios.post('http://localhost:5000/users', person);
+    return response;
+  }
+  catch (error) {
+    console.log(error);
+    return false;
+  }
+}
+
+function addAccount(person) {
+  makeAccountPostCall(person).then( result => {
+    if (result && result.status === 201)
+      console.log('Success!');
+  });  
+}
+
+async function makeLoginPostCall(person){
+  try {
+    const response = await axios.post('http://localhost:5000/login', person);
+    return response;
+  }
+  catch (error) {
+    console.log(error);
+    return false;
+  }
+}
+
+function checkCredentials(person) {
+  makeLoginPostCall(person).then( result => {
+    if (result && result.status === 200)
+      console.log('Success!');
+    else
+      console.log('Failure.');
+  });  
+}
+
 // "eslintConfig": {
 //   "extends": [
 //     "react-app",
@@ -122,11 +161,10 @@ async function makePostCall(person){
           <Route
             path="/createaccount"
             element={
-              <CreateAccount
-              />
+              <CreateAccount handleSubmit={addAccount}/>
             }
           />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login handleSubmit={checkCredentials}/>} />
         </Routes>
       </BrowserRouter>
     </div>
