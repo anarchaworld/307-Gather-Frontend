@@ -1,26 +1,45 @@
+### Compile Instruction
+
+To compile the front end for `Gather`, clone the repo and run
+
+```
+npm install
+```
+
+To run it locally, run
+
+```
+npm run start
+```
+
+---
+
 ### Style Guide
 
 For the Gather project, style guidelines are as follows:
-  - Lower camel-case for function names
-  - Single quotes for strings
-  - Tabs for indentation
-  - K&R curly braces
- 
- _________
+
+- Lower camel-case for function names
+- Single quotes for strings
+- Tabs for indentation
+- K&R curly braces
+
+---
+
 ### VS Code / npm to install extensions
 
-Run 
+Run
 `npm install pylint --save-dev`
 
-To install prettier, run 
+To install prettier, run
 `npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev`
 
-To add config file, run 
+To add config file, run
 `npx pylint --init`
 
 Store as json and select custom style options corresponding with style guide.
 
 Add to json to match the following:
+
 ```json
     "extends": [
         "eslint:recommended",
@@ -28,7 +47,9 @@ Add to json to match the following:
         "plugin:prettier/recommended"
     ]
 ```
+
 Modify `package.json` to read:
+
 ```json
   "env": {
     "browser": true,
@@ -40,16 +61,21 @@ Modify `package.json` to read:
     "react/react-in-jsx-scope": "off"
   }
 ```
+
 This is to support `jest`.
 
 Finally, add the "format" command to `package.json` to run prettier:
+
 ```json
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
 ```
-_______
+
+---
+
 ### Neovim
 
 #### Prerequisite
+
 - Neovim `>= 0.8.3`
 - [Mason](https://github.com/williamboman/mason.nvim)
 - [Mason Lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
