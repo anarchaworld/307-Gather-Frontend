@@ -1,7 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import mapboxgl from "!mapbox-gl"; 
-import Table from './Table';
-import Form from './Form';
+import mapboxgl from "mapbox-gl";
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
@@ -14,7 +12,6 @@ function Map() {
   const [lng, setLng] = useState(lng_default);
   const [lat, setLat] = useState(lat_default);
   const [zoom, setZoom] = useState(zoom_default);
-  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -35,15 +32,7 @@ function Map() {
     });
   });
 
-  return (
-    <div>
-      <div className="sidebar">
-        Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-      </div>
-      <div ref={mapContainer} className="map-container" />
-    </div>
-  );
-
+  return <div ref={mapContainer} className="map-container" />;
 }
 
 export default Map;

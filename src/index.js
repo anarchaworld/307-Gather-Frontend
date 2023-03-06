@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "mapbox-gl/dist/mapbox-gl.css";
-import "./index.css";
-import Map from "./Map";
-import MainPage from "./MainPage";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
-ReactDOM.render(
+import "./index.css";
+import "mapbox-gl/dist/mapbox-gl.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App />
-    <MainPage />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
