@@ -1,6 +1,7 @@
 ### Build Status
 ![](https://github.com/anarchaworld/307-Gather-Frontend/actions/workflows/node.js.yml/badge.svg)
 
+____
 ### Compile Instruction
 
 To compile the front end for `Gather`, clone the repo and run
@@ -13,6 +14,15 @@ To run it locally, run
 
 ```
 npm run start
+```
+
+To run all the test cases, enter
+```
+npm run test
+```
+To see code coverage, enter
+```
+npm run test -- --coverage
 ```
 
 ---
