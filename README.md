@@ -29,6 +29,8 @@ npm run test -- --coverage
 ### UI Prototype
 There are <ins>_**2 links**_</ins> because we have them on different pages.
 
+Page Navigation is added for both links.
+
 - [Login & Password](https://www.figma.com/file/A0BfmaQVH5doZ4Mg8GJMs4/Login-Screen?node-id=0%3A1&t=KfKAlqUsiZcyPFp8-1)
 - [Everything Else](https://www.figma.com/file/A0BfmaQVH5doZ4Mg8GJMs4/Login-Screen?node-id=21%3A2&t=KfKAlqUsiZcyPFp8-1)
 
