@@ -2,9 +2,9 @@
 ![](https://github.com/anarchaworld/307-Gather-Frontend/actions/workflows/node.js.yml/badge.svg)
 
 ____
-### Compile Instruction
+### Build Instruction
 
-To compile the front end for `Gather`, clone the repo and run
+To compile and build the front end for `Gather`, clone the repo and run
 
 ```
 npm install
@@ -32,7 +32,6 @@ npm run test -- --coverage
 For the Gather project, style guidelines are as follows:
 
 - Lower camel-case for function names
-- Single quotes for strings
 - Tabs for indentation
 - K&R curly braces
 
