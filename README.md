@@ -1,3 +1,8 @@
+### Gather
+Gather is a web app where Cal Poly students/faculty get to explore what events there are on campus and host their own events for everyone to attend.
+
+___
+
 ### Build Status
 ![](https://github.com/anarchaworld/307-Gather-Frontend/actions/workflows/node.js.yml/badge.svg)
 
