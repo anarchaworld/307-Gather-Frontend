@@ -52,6 +52,12 @@ Page Navigation is added for both links.
 - [Everything Else](https://www.figma.com/file/A0BfmaQVH5doZ4Mg8GJMs4/Login-Screen?node-id=21%3A2&t=KfKAlqUsiZcyPFp8-1)
 
 ___
+### Class Diagrams
+The class diagrams for the backend struture can be found at the link below
+
+https://github.com/anthony-yeo/307-Gather/wiki/Class-Diagrams
+
+___
 ### Style Guide
 
 For the Gather project, style guidelines are as follows:
