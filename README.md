@@ -96,22 +96,6 @@ Add to json to match the following:
     ]
 ```
 
-Modify `package.json` to read:
-
-```json
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "jest": true
-  },
-  "rules": {
-    "react/prop-types": 0,
-    "react/react-in-jsx-scope": "off"
-  }
-```
-
-This is to support `jest`.
-
 Finally, add the "format" command to `package.json` to run prettier:
 
 ```json
