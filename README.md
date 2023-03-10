@@ -5,12 +5,16 @@ This repo hosts the source code for the frontend of `Gather`.
 
 The backend is stored [here.](https://github.com/anthony-yeo/307-Gather)
 ___
+### Releases
+For every sprint, a snapshot (release) can be found [here](https://github.com/anarchaworld/307-Gather-Frontend/releases)
+
+___
 
 ### Build Status
 ![](https://github.com/anarchaworld/307-Gather-Frontend/actions/workflows/node.js.yml/badge.svg)
 
 ____
-### Build Instruction
+### Build Instructions
 
 To compile and build the front end for `Gather`, clone the repo and run
 
