@@ -20,7 +20,17 @@ To run it locally, run
 ```
 npm run start
 ```
+#### Environment Variables
+If the home page is blank, check that there is a file named `.env.local` in the root of the repo. 
+If the file does not exist, please go to mapbox and get an _access token of your own_, put
 
+```
+REACT_APP_MAPBOX_ACCESS_TOKEN=<YOUR ACCESS TOKEN>
+```
+
+inside that `.env.local`. Then re-run `npm run start`
+
+<br></br>
 To run all the test cases, enter
 ```
 npm run test
