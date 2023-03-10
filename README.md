@@ -1,4 +1,4 @@
-### Gather (Front End)
+### Gather (Frontend)
 Gather is a web app where Cal Poly students/faculty get to explore what events there are on campus and host their own events for everyone to attend.
 
 This repo hosts the source code for the frontend of `Gather`.
