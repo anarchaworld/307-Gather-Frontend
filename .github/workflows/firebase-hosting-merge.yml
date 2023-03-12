@@ -6,6 +6,7 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - firebase
+  workflow_dispatch:
 
 # env:
 #   REACT_APP_MAPBOX_ACCESS_TOKEN: ${{ secrets.REACT_APP_MAPBOX_ACCESS_TOKEN }}
