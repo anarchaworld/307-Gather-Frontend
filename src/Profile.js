@@ -19,7 +19,6 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import Map from "./Map";
 
 function Copyright() {
   return (
@@ -42,7 +41,7 @@ const theme = createTheme({
   },
 });
 
-export default function Home() {
+export default function Profile() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -53,7 +52,7 @@ export default function Home() {
             <Typography 
               variant="h6" 
               component="div" 
-              color='inherit'
+              color='inherit' 
               sx={{ flexGrow: 1 }}>
               Gather
             </Typography>
@@ -94,48 +93,6 @@ export default function Home() {
           </Container>
         </Box>
 
-        {/* Map */}
-        <Map />
-
-        {/* Event Cards */}
-        <Container sx={{ py: 5 }} maxWidth="md">
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: "56.25%",
-                    }}
-                    image="images/event.png"
-                    alt="event discription"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Event Title!
-                    </Typography>
-                    <Typography>
-                      Event Description - what, where, and when, etc
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" variant="outlined">
-                      View
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
       </main>
 
       {/* Footer */}
