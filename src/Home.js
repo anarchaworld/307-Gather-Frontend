@@ -18,12 +18,13 @@ import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Map from "./Map";
+import getAllEvents from "./Events";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://gather-app.com/">
+      <Link color="inherit" href="https://gather-5411b.web.app">
         Gather
       </Link>{" "}
       {new Date().getFullYear()}

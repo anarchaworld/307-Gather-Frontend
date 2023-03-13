@@ -37,3 +37,20 @@ export async function deleteUser(user) {
     return false;
   }
 }
+
+// take the info that contains the login request and ask
+// the backend to verify it.
+// Return the user info upon successful, otherwise return false.
+export async function login(reqInfo) {
+  try {
+    const response = await axios.post(backend + "login", reqInfo);
+    if (response && response.status === 200) {
+      return response.data;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+}
