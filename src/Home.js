@@ -18,7 +18,7 @@ import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Map from "./Map";
-import getAllEvents from "./Events";
+import { getAllEvents } from "./Events";
 
 function Copyright() {
   return (
@@ -34,6 +34,11 @@ function Copyright() {
 }
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const cards = getAllEvents();
+// console.log(getAllEvents());
+// const arr = getAllEvents().then((res) => res.data);
+// console.log(arr);
 
 const theme = createTheme({
   palette: {
@@ -111,11 +116,9 @@ export default function Home() {
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Event Title!
+                      card.name
                     </Typography>
-                    <Typography>
-                      Event Description - what, where, and when, etc
-                    </Typography>
+                    <Typography>card.description</Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" variant="outlined">
