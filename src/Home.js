@@ -80,7 +80,7 @@ export default function Home() {
               paragraph
             >
               This is the place where you can find events to attend, host new
-              events, and meet new people. All for free, forever!
+              events, and meet new people.
             </Typography>
           </Container>
         </Box>
